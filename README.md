@@ -69,3 +69,8 @@ Combination of `cloudfront:setup` and `cloudfront:build:deploy` commands with or
 ### `serverless:remove`
 
 Remove an entire stack configured in `serverless.yml` via CloudFormation.
+
+
+# Module 2
+All scope is done. Serververless + CloudFront automation deployment is configured.
+ - link to deployment  https://d2ybabzqbtwgmh.cloudfront.net/
