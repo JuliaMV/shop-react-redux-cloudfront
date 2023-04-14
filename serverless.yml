@@ -7,7 +7,7 @@ provider:
   runtime: nodejs16.x
   region: us-east-1
   # setup profile for AWS CLI.
-  profile: sandx
+  profile: default
 
 plugins:
   - serverless-finch
