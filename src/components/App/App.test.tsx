@@ -8,7 +8,7 @@ import { CartItem } from "~/models/CartItem";
 import { AvailableProduct } from "~/models/Product";
 import { renderWithProviders } from "~/testUtils";
 import { screen, waitForElementToBeRemoved } from "@testing-library/react";
-import { formatAsPrice } from "~/utils/utils";
+import { formatAsPrice } from "~/utils";
 
 test("Renders products list", async () => {
   const products: AvailableProduct[] = [
