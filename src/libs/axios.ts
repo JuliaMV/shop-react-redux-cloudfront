@@ -8,11 +8,17 @@ appAxios.interceptors.response.use(
     // Do something with response data
     return response;
   },
-  function (error: AxiosError) {
+  function (error: AxiosError<{ message: string }, unknown>) {
     // Any status codes that falls outside the range of 2xx cause this function to trigger
     // Do something with response error
-    // console.log("err", error);
-    // throw error;
+    if (error.response) {
+      const {
+        status,
+        data: { message },
+      } = error.response;
+
+      alert(`${status}: ${message}`);
+    }
     return Promise.reject(error);
   }
 );
