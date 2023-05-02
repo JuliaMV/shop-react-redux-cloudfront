@@ -3,7 +3,7 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import { CartItem } from "~/models/CartItem";
-import { formatAsPrice } from "~/utils/utils";
+import { formatAsPrice } from "~/utils";
 import AddProductToCart from "~/components/AddProductToCart/AddProductToCart";
 
 type CartItemsProps = {
